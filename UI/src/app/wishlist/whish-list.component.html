@@ -1,0 +1,30 @@
+<section>
+    <div class="container movieContent">
+      <h6 id='title'class="subtitle">My Wishlist</h6>
+      <div class="row mb-3">
+        <div class="col-md-6" *ngFor="let movie of movies" style="margin-top: 10px;">
+          <div class=" wishList d-flex flex-row border rounded">
+            <a [routerLink]="['/movie', movie.id]">
+              <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{movie.poster_path}}" />
+            </a>
+            <div class="pl-3 pt-2 pr-2 pb-2 w-75">
+              <div class="form-group">
+                <a [routerLink]="['/movie', movie.id]">
+                  <h4>{{movie.title}}</h4>
+                </a>
+                <h6>Release:
+                  <small>{{movie.release_date | date:"y" }}</small>
+                </h6>
+                <h6>Rating: <small>{{movie.vote_average}}</small></h6>
+                <textarea id="comments" class="form-control" [(ngModel)]="movie.comments"></textarea>
+              </div>
+              <div class="form-group row pl-2">
+                <button id='btnSave' type="button" class="btn btn-primary mr-2" (click)="update(movie)">Update</button>
+                <button id='btnDelete' type="button" class="btn btn-danger" (click)="delete(movie.id)">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

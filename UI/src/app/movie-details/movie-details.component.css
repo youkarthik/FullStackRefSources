@@ -1,0 +1,25 @@
+ @media (min-width: 768px){
+    .home-content, #movie-content {
+        margin-top: 30px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        /* color: white; */
+    }
+}
+
+.bg { 
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(255,255,255, 0.9);
+  }

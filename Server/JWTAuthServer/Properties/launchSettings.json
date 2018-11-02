@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:50487/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "auth/login",
+      "environmentVariables": {
+        "SQL_AUTH": "Server=IP-AC1F1FF8\\SQLEXPRESS;Database=Auth;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "JWTAuthServer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "auth/login",
+      "environmentVariables": {
+        "SQL_AUTH": "Server=IP-AC1F1FF8\\SQLEXPRESS;Database=Auth;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:50488/"
+    }
+  }
+}
